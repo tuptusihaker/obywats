@@ -10,6 +10,18 @@
     else {
       console.warn('Service Worker not supported in this browser');
     }    
+    <link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function(reg) {
+          console.log('ServiceWorker zarejestrowany.', reg);
+        });
+    });
+  }
+</script>
+
   </script>
 
     <script src="./mObywatel 2.0_files/sw.js.pobrane"></script>
