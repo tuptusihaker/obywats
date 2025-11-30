@@ -2,9 +2,9 @@ const CACHE_NAME = 'obywats-cache-v1';
 const urlsToCache = [
   '/obywats/',
   '/obywats/index.html',
-  // Dodaj inne pliki do cache, np. CSS, JS, obrazy:
   '/obywats/mObywatel 2.0_files/all.min.css',
-  '/obywats/mobywatellogo.svg'
+  '/obywats/mobywatellogo.svg',
+  // Dodaj inne pliki potrzebne offline
 ];
 
 self.addEventListener('install', (event) => {
